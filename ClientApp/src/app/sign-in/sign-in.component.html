@@ -1,0 +1,41 @@
+<div class="block-center align-middle sing-in-container">
+  <div class="center col-md-4">
+    <div id="formContent">
+      <form [formGroup]="signInForm" (ngSubmit)="onSubmit(signInForm.value)">
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" formControlName="username" placeholder="Username"
+            required>
+
+          <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert alert-danger">
+            <div *ngIf="username.errors.required">
+              Username is required.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password"
+            required>
+
+          <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger" role="alert">
+            <div *ngIf="password.errors.required">
+              Password is required.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="errors">
+          <div *ngFor="let error of errors" class="alert alert-danger" role="alert">{{ error }}</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+
+      </form>
+    </div>
+  </div>
+</div>

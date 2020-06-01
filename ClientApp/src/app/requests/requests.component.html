@@ -1,0 +1,8 @@
+<div class="block-center text-center align-middle">
+  <div class="center col-md-4">
+    <button *ngIf="!authorized" button type="button" class="btn btn-light btn-lg" [routerLink]="['signin']">Sign in</button>
+    <button button type="button" class="btn btn-light btn-lg" (click)="userInformationSubmit()">User information</button>
+    <button button type="button" class="btn btn-light btn-lg" (click)="clientErrorSubmit()">Client error</button>
+    <button button type="button" class="btn btn-light btn-lg" (click)="exceptionSubmit()">Exception</button>
+  </div>
+</div>

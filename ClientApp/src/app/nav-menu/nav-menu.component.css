@@ -1,7 +1,9 @@
 a.navbar-brand {
   white-space: normal;
   text-align: center;
-  word-break: break-all;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
@@ -15,4 +17,10 @@ html {
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: white;
 }

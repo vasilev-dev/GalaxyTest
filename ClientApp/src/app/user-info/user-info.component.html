@@ -1,0 +1,11 @@
+<h4>User information: {{ username }}</h4>
+
+<div *ngIf="userInfo; else notInformation">
+  <p *ngIf="userInfo.name">Name: {{ userInfo.name }}</p>
+  <p *ngIf="userInfo.birthday">Birthday: {{ userInfo.birthday }} </p>
+  <p *ngIf="userInfo.amount">Amount: {{ userInfo.amount }} </p>
+</div>
+
+<ng-template #notInformation>
+  <p>No user information</p>
+</ng-template>
