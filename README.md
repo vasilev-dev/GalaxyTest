@@ -1,4 +1,7 @@
 # GalaxyTest
+[Ccылка на сайт](https://galaxytest20200601180228.azurewebsites.net/)
+
+
 (*Кнопка GalaxyTest в футере = возврат на главную страницу*)
 
 ### Стек технологий
