@@ -18,3 +18,6 @@
 vasilev | Qwerty1!
 galaxy | Pa$$w0rd
 admin | Admin*0
+
+### База данных 
+Identity автоматически генерирует таблицу пользователей в базе данных.
